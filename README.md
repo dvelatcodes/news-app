@@ -1,20 +1,31 @@
-# Welcome to your Expo app 👋
+# Welcome to your Expo News app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a news app that makes use of a news api to generate amazing updates on events.
 
 ## Get started
 
-1. Install dependencies
+1. Clone repo
+
+2. Install dependencies
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the app
 
    ```bash
     npx expo start
    ```
+
+## Software | Technologies
+
+- [Tanstack Query](https://tanstack.com/query/latest)
+- [Linear Gradient Expo](https://docs.expo.dev/versions/latest/sdk/linear-gradient/)
+
+## API
+
+- [news api](https://newsapi.org/docs/endpoints/top-headlines)
 
 In the output, you'll find options to open the app in a
 
