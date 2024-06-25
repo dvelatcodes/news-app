@@ -4,12 +4,7 @@ import { useLocalSearchParams } from "expo-router";
 
 const NewsDetails = () => {
   const { title, content, urlToImage, description } = useLocalSearchParams();
-  console.log({
-    title,
-    content,
-    urlToImage,
-    description,
-  });
+  
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>{title}</Text>
