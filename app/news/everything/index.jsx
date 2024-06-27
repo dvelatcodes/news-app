@@ -12,6 +12,7 @@ import {
 import { useQuery } from "@tanstack/react-query";
 import { getNewsByQuery } from "../../../lib/api/api";
 import { useRouter } from "expo-router";
+import uuid from 'react-native-uuid';
 
 const AllNews = () => {
   const [query, setQuery] = useState("");
@@ -68,7 +69,7 @@ const AllNews = () => {
       {isSuccess && data.data.articles ? (
         <FlatList
           data={data.data.articles}
-          keyExtractor={(item) => item.url}
+          keyExtractor={(item) => uuid.v4()}
           renderItem={({ item }) => (
             <TouchableOpacity
               style={styles.articleContainer}
