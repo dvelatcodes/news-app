@@ -2,6 +2,21 @@
 
 This is a news app that makes use of a news api to generate amazing updates on events.
 
+
+## App Functionality
+Your users should be able to:
+
+- View the optimal layout for the interface depending on their device's screen size
+- Search for news filtered by Categories, Countries, Random Search.
+
+## Screenshots
+
+![alt text](<Screenshot 2024-06-27 at 11.01.27 AM.png>)
+![alt text](<Screenshot 2024-06-27 at 11.02.06 AM.png>)
+![alt text](<Screenshot 2024-06-27 at 11.03.23 AM.png>)
+![alt text](<Screenshot 2024-06-27 at 11.04.13 AM.png>)
+![alt text](<Screenshot 2024-06-27 at 11.05.40 AM.png>)
+
 ## Get started
 
 1. Clone repo
@@ -18,14 +33,39 @@ This is a news app that makes use of a news api to generate amazing updates on e
     npx expo start
    ```
 
-## Software | Technologies
+## Core Component Used
+- Text
+- View
+- ImageBackground
+- Image
+- TextInput
+- TouchableOpacity
+- Tabs
+- MaterialIcon
+- ActivityIndicator
+
+## Expo Router
+- useRouter
+- LocalSearchParams
+
+## Third Party Libraries Used
 
 - [Tanstack Query](https://tanstack.com/query/latest)
 - [Linear Gradient Expo](https://docs.expo.dev/versions/latest/sdk/linear-gradient/)
+- Axios
 
 ## API
 
 - [news api](https://newsapi.org/docs/endpoints/top-headlines)
+
+
+
+## Author
+
+- Website - [My portfolio](https://dvelat-portfolio.vercel.app/)
+- Frontend Mentor - [@dvelatcodes](https://www.frontendmentor.io/profile/dvelatcodes)
+- Linkedin - [@Love (Dvelat codes) Olubummo](https://www.linkedin.com/in/love-olubummo-dvelat/)
+
 
 In the output, you'll find options to open the app in a
 
