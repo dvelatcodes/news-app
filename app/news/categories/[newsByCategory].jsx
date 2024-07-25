@@ -11,6 +11,8 @@ import React from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useQuery } from "@tanstack/react-query";
 import { getNewsByCategory } from "../../../lib/api/api";
+import uuid from 'react-native-uuid';
+
 
 const NewsByCategory = () => {
   // get the category from the url
@@ -45,7 +47,7 @@ const NewsByCategory = () => {
       {isSuccess && (
         <FlatList
           data={data.data.articles}
-          keyExtractor={(item) => item.url}
+          keyExtractor={(item) => uuid.v4()}
           renderItem={({ item }) => (
             <TouchableOpacity
               style={styles.articleContainer}

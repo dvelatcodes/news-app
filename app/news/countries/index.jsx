@@ -10,6 +10,8 @@ import React from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useQuery } from "@tanstack/react-query";
 import { getTopNewsByCountry } from "../../../lib/api/api";
+import uuid from 'react-native-uuid';
+
 
 const CountryNews = () => {
   // get the category from the url
@@ -26,7 +28,7 @@ const CountryNews = () => {
       <Text style={styles.title}>{country.toUpperCase()} News</Text>
       {isSuccess && <FlatList
         data={data.data.articles}
-        keyExtractor={(item) => item.url}
+        keyExtractor={(item) => uuid.v4()}
         renderItem={({ item }) => {
           return (
             <TouchableOpacity
